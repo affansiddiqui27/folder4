@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules for Naming JS Variablest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Folder3</h1>
+    <h1>Rules for Naming JS Variables</h1>
+    <div class="content">
+        <p>Variable names can only contain letters, numbers, dollar signs, and underscores.</p>
+        <p>For example: <code>$my_1stVariable</code></p>
+        <p>Variables must begin with a letter, dollar sign, or underscore.</p>
+        <p>For example: <code>$name</code>, <code>_name</code>, or <code>name</code></p>
+        <p>Variable names are case sensitive.</p>
+        <p>Variable names should not be JavaScript keywords.</p>
+    </div>
+
+    <script>
+        // Declare 3 variables in one statement
+        var var1, var2, var3;
+
+        // Declare 5 legal variable names
+        var myVariable;
+        var $myVariable;
+        var _myVariable;
+        var myVariable1;
+        var my_variable;
+
+        // Declare 5 illegal variable names
+        // var 1myVariable;  // Illegal: Cannot start with a number
+        // var my-Variable;  // Illegal: Cannot contain hyphens
+        // var my Variable;  // Illegal: Cannot contain spaces
+        // var var;          // Illegal: Cannot use reserved keywords
+        // var myVariable!;  // Illegal: Cannot contain special characters other than $ and _
+
+        // Display the rules in the browser
+        document.write("<h1>Rules for naming JS variables</h1>");
+        document.write("Variable names can only contain letters, numbers, dollar signs, and underscores.<br>");
+        document.write("For example: $my_1stVariable<br>");
+        document.write("Variables must begin with a letter, dollar sign, or underscore.<br>");
+        document.write("For example: $name, _name, or name<br>");
+        document.write("Variable names are case sensitive.<br>");
+        document.write("Variable names should not be JavaScript keywords.<br>");
+    </script>
+</body>
+</html>
